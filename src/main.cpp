@@ -16,6 +16,7 @@ void managerMenu(Identity *&manager)
     Manager *man = (Manager *)manager;
     while (true)
     {
+        //man->operMenu();
         std::cout << "请输入您的选择：" << std::endl;
         int choice;
         std::cin >> choice;
@@ -80,7 +81,7 @@ void LoginIn(string Filename, int type){
         while(ifs >> fId && ifs >> fName && ifs >> fPwd){
 
             if(id == fId && name == fName && pwd == fPwd){
-                cout << "学生代表登录成功！" << endl;
+                cout << "欢迎学生代表" << name << "登录成功！" << endl;
                 cout << "按任意键继续..." << endl;
                 cin.ignore();
                 cin.get();
@@ -100,7 +101,7 @@ void LoginIn(string Filename, int type){
 
             if (id == fId && name == fName && pwd == fPwd)
             {
-                cout << "老师登录成功！" << endl;
+                cout << "欢迎老师" << name << "登录成功！" << endl;
                 cout << "按任意键继续..." << endl;
                 cin.ignore();
                 cin.get();
@@ -118,7 +119,7 @@ void LoginIn(string Filename, int type){
         {
             if (name == fName && pwd == fPwd)
             {
-                cout << "管理员登录成功！" << endl;
+                cout << "欢迎管理员" << name << "登录成功！" << endl;
                 cout << "按任意键继续..." << endl;
                 cin.ignore();
                 cin.get();
