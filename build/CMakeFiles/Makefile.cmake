@@ -11,6 +11,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.2.1/CMakeCCompiler.cmake"
   "CMakeFiles/4.2.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.2.1/CMakeSystem.cmake"
+  "/home/pixriq/桌面/Cpp_code/Computer room reservation system/data/admin.txt"
+  "/home/pixriq/桌面/Cpp_code/Computer room reservation system/data/computerRoom.txt"
+  "/home/pixriq/桌面/Cpp_code/Computer room reservation system/data/order.txt"
+  "/home/pixriq/桌面/Cpp_code/Computer room reservation system/data/student.txt"
+  "/home/pixriq/桌面/Cpp_code/Computer room reservation system/data/teacher.txt"
   "/opt/cmake-4.2.1/share/cmake-4.2/Modules/CMakeCInformation.cmake"
   "/opt/cmake-4.2.1/share/cmake-4.2/Modules/CMakeCXXInformation.cmake"
   "/opt/cmake-4.2.1/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake"
@@ -49,6 +54,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "admin.txt"
+  "teacher.txt"
+  "student.txt"
+  "order.txt"
+  "computerRoom.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

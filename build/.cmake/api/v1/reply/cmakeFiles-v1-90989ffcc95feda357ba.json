@@ -190,6 +190,21 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/opt/cmake-4.2.1/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU.cmake"
+		},
+		{
+			"path" : "data/admin.txt"
+		},
+		{
+			"path" : "data/teacher.txt"
+		},
+		{
+			"path" : "data/student.txt"
+		},
+		{
+			"path" : "data/order.txt"
+		},
+		{
+			"path" : "data/computerRoom.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

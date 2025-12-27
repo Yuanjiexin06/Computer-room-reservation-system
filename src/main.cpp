@@ -1,10 +1,142 @@
 #include <iostream>
+#include <fstream>
+#include <string>
 
 using namespace std;
 
 #include "identity.h"
+#include "student.h"
+#include "teacher.h"
+#include "manager.h"
+#include "globaFile.h"
 
+void managerMenu(Identity *&manager)
+{
+    manager->operMenu();
+    Manager *man = (Manager *)manager;
+    while (true)
+    {
+        std::cout << "请输入您的选择：" << std::endl;
+        int choice;
+        std::cin >> choice;
+        switch (choice)
+        {
+        case 1:
+            std::cout << "添加账号" << std::endl;
+            man->addPerson();
+            break;
+        case 2:
+            std::cout << "查看账号" << std::endl;
+            man->showPerson();
+            break;
+        case 3:
+            std::cout << "查看机房信息" << std::endl;
+            man->showComputer();
+            break;
+        case 4:
+            std::cout << "清空预约记录" << std::endl;
+            man->cleanFile();
+            break;
+        case 0:
+            delete manager;
+            std::cout << "注销成功" << std::endl;
+            return;
+        default:
+            std::cout << "输入有误，请重新输入！" << std::endl;
+            break;
+        }
+    }
+}
+void LoginIn(string Filename, int type){
+    //type 1学生 2老师 3管理员
+    Identity * person = nullptr; //父类指针指向子类对象
+    ifstream ifs;
+    ifs.open(Filename, ios::in);
+    if(!ifs.is_open()){
+        cout << "文件不存在或打开失败" << endl;
+        ifs.close();
+        return;
+    }
+    //准备接收用户信息
+    string name;
+    string pwd;
+    int id;
+    if(type == 1){
+        cout << "请输入你的学号" << endl;
+        cin >> id;
+    }else if(type == 2){
+        cout << "请输入你的工号" << endl;
+        cin >> id;
+    }
+    cout << "请输入用户名" << endl;
+    cin >> name;
+    cout << "请输入密码" << endl;
+    cin >> pwd;
+    //验证用户信息
+    if(type == 1){
+        int fId;
+        string fName;
+        string fPwd;
+        while(ifs >> fId && ifs >> fName && ifs >> fPwd){
 
+            if(id == fId && name == fName && pwd == fPwd){
+                cout << "学生代表登录成功！" << endl;
+                cout << "按任意键继续..." << endl;
+                cin.ignore();
+                cin.get();
+                system("clear");
+                person = new Student(fId, fName, fPwd);
+
+                return;
+            }
+        }
+    }
+    else if(type == 2){
+        int fId;
+        string fName;
+        string fPwd;
+        while (ifs >> fId && ifs >> fName && ifs >> fPwd)
+        {
+
+            if (id == fId && name == fName && pwd == fPwd)
+            {
+                cout << "老师登录成功！" << endl;
+                cout << "按任意键继续..." << endl;
+                cin.ignore();
+                cin.get();
+                system("clear");
+                person = new Teacher(fId, fName, fPwd);
+
+                return;
+            }
+        }
+    }
+    else{
+        string fName;
+        string fPwd;
+        while (ifs >> fName && ifs >> fPwd)
+        {
+            if (name == fName && pwd == fPwd)
+            {
+                cout << "管理员登录成功！" << endl;
+                cout << "按任意键继续..." << endl;
+                cin.ignore();
+                cin.get();
+                system("clear");
+                person = new Manager(fName, fPwd);
+                managerMenu(person);
+                return;
+            }
+        }
+        
+    }
+    cout << "验证失败，用户名或密码错误！" << endl;
+    cout << "按任意键继续..." << endl;
+    cin.ignore();
+    cin.get();
+    system("clear");
+    return;
+}
 
 
 int main(){
@@ -24,15 +156,15 @@ int main(){
         switch (choice)
         {
         case 1:
-            cout << "您选择了学生代表身份。" << endl;
+            LoginIn(STU_FILE, 1);
             // 调用学生代表相关功能
             break;
         case 2:
-            cout << "您选择了老师身份。" << endl;
+            LoginIn(TEA_FILE, 2);
             // 调用老师相关功能
             break;
         case 3:
-            cout << "您选择了管理员身份。" << endl;
+            LoginIn(ADMIN_FILE, 3);
             // 调用管理员相关功能
             break;
         case 0:

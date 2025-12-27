@@ -144,6 +144,14 @@ CMakeFiles/app.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc \
+ /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/fstream \
+ /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
+ /usr/include/c++/13/bits/fstream.tcc \
  /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/identity.h \
- /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h
+ /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
+ /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/student.h \
+ /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/teacher.h \
+ /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/manager.h \
+ /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/globaFile.h
