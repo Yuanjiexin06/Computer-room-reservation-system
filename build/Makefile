@@ -160,6 +160,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/manager.o: src/manager.cpp.o
+.PHONY : src/manager.o
+
+# target to build an object file
+src/manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/manager.cpp.o
+.PHONY : src/manager.cpp.o
+
+src/manager.i: src/manager.cpp.i
+.PHONY : src/manager.i
+
+# target to preprocess a source file
+src/manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/manager.cpp.i
+.PHONY : src/manager.cpp.i
+
+src/manager.s: src/manager.cpp.s
+.PHONY : src/manager.s
+
+# target to generate assembly for a file
+src/manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/manager.cpp.s
+.PHONY : src/manager.cpp.s
+
 src/student.o: src/student.cpp.o
 .PHONY : src/student.o
 
@@ -221,6 +245,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/manager.o"
+	@echo "... src/manager.i"
+	@echo "... src/manager.s"
 	@echo "... src/student.o"
 	@echo "... src/student.i"
 	@echo "... src/student.s"

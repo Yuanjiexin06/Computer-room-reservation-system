@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/app.dir/link.d"
   "CMakeFiles/app.dir/src/main.cpp.o"
   "CMakeFiles/app.dir/src/main.cpp.o.d"
+  "CMakeFiles/app.dir/src/manager.cpp.o"
+  "CMakeFiles/app.dir/src/manager.cpp.o.d"
   "CMakeFiles/app.dir/src/student.cpp.o"
   "CMakeFiles/app.dir/src/student.cpp.o.d"
   "CMakeFiles/app.dir/src/teacher.cpp.o"

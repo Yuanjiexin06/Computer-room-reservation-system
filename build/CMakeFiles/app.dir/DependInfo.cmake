@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pixriq/桌面/Cpp_code/Computer room reservation system/src/main.cpp" "CMakeFiles/app.dir/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/src/main.cpp.o.d"
+  "/home/pixriq/桌面/Cpp_code/Computer room reservation system/src/manager.cpp" "CMakeFiles/app.dir/src/manager.cpp.o" "gcc" "CMakeFiles/app.dir/src/manager.cpp.o.d"
   "/home/pixriq/桌面/Cpp_code/Computer room reservation system/src/student.cpp" "CMakeFiles/app.dir/src/student.cpp.o" "gcc" "CMakeFiles/app.dir/src/student.cpp.o.d"
   "/home/pixriq/桌面/Cpp_code/Computer room reservation system/src/teacher.cpp" "CMakeFiles/app.dir/src/teacher.cpp.o" "gcc" "CMakeFiles/app.dir/src/teacher.cpp.o.d"
   "" "app" "gcc" "CMakeFiles/app.dir/link.d"

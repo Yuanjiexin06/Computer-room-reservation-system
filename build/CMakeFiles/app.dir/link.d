@@ -3,6 +3,7 @@ app: \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o \
   CMakeFiles/app.dir/src/main.cpp.o \
+  CMakeFiles/app.dir/src/manager.cpp.o \
   CMakeFiles/app.dir/src/student.cpp.o \
   CMakeFiles/app.dir/src/teacher.cpp.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so \
@@ -42,6 +43,8 @@ app: \
 /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o:
 
 CMakeFiles/app.dir/src/main.cpp.o:
+
+CMakeFiles/app.dir/src/manager.cpp.o:
 
 CMakeFiles/app.dir/src/student.cpp.o:
 
