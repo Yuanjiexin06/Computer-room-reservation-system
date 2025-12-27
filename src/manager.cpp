@@ -9,6 +9,21 @@ Manager::Manager(std::string name, std::string pwd)
     : Identity(std::move(name), std::move(pwd))
 {
     this->initVector();
+    std::ifstream ifs;
+    ifs.open(COMPUTER_FILE, std::ios::in);
+    if (!ifs.is_open())
+    {
+        std::cout << "机房文件不存在或打开失败" << std::endl;
+        ifs.close();
+        return;
+    }
+    ComputerRoom c;
+    while(ifs >> c.m_ComId && ifs >> c.m_MaxNum)
+    {
+        m_vCom.push_back(c);
+    }
+    std::cout << "当前的机房数量为：" << m_vCom.size() << std::endl;
+    ifs.close();
 }
 void Manager::operMenu()
 {
@@ -113,9 +128,28 @@ void Manager::showPerson()
 }
 void Manager::showComputer()
 {
+    for (auto it = m_vCom.begin(); it != m_vCom.end(); ++it){
+        std::cout << "机房编号：" << it->m_ComId << "\t机房最大容量：" << it->m_MaxNum << std::endl;
+    }
+    std::cout << "输入任意键继续" << std::endl;
+    std::cin.ignore();
+    std::cin.get();
+    system("clear");
+    this->operMenu();
+    return;
 }
 void Manager::cleanFile()
 {
+    std::ofstream ofs;
+    ofs.open(ORDER_FILE, std::ios::trunc);
+    ofs.close();
+    std::cout << "清空成功！" << std::endl;
+    std::cout << "输入任意键继续" << std::endl;
+    std::cin.ignore();
+    std::cin.get();
+    system("clear");
+    this->operMenu();
+    return;
 }
 void Manager::initVector()
 {

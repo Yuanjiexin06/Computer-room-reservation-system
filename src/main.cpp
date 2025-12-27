@@ -23,30 +23,35 @@ void managerMenu(Identity *&manager)
         switch (choice)
         {
         case 1:
-            std::cout << "添加账号" << std::endl;
+            //std::cout << "添加账号" << std::endl;
             man->addPerson();
             break;
         case 2:
-            std::cout << "查看账号" << std::endl;
+            //std::cout << "查看账号" << std::endl;
             man->showPerson();
             break;
         case 3:
-            std::cout << "查看机房信息" << std::endl;
+            //std::cout << "查看机房信息" << std::endl;
             man->showComputer();
             break;
         case 4:
-            std::cout << "清空预约记录" << std::endl;
+            //std::cout << "清空预约记录" << std::endl;
             man->cleanFile();
             break;
         case 0:
             delete manager;
-            std::cout << "注销成功" << std::endl;
+            //std::cout << "注销成功" << std::endl;
             return;
         default:
             std::cout << "输入有误，请重新输入！" << std::endl;
             break;
         }
     }
+}
+void studentMenu(Identity *&student)
+{
+    student->operMenu();
+    //TODO
 }
 void LoginIn(string Filename, int type){
     //type 1学生 2老师 3管理员

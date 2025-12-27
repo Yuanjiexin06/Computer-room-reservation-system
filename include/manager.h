@@ -2,6 +2,7 @@
 #include "identity.h"
 #include "student.h"
 #include "teacher.h"
+#include "computerRoom.h"
 #include <string>
 #include <vector>
 
@@ -20,6 +21,6 @@ public:
     void initVector();
     std::vector <Student> m_vStu;
     std::vector <Teacher> m_vTea;
-
+    std::vector <ComputerRoom> m_vCom;
     bool checkRepeat(int id, int type);
 };

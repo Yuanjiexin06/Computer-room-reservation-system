@@ -150,6 +150,7 @@ CMakeFiles/app.dir/src/manager.cpp.o: \
  /usr/include/c++/13/bits/stl_relops.h \
  /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/student.h \
  /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/teacher.h \
+ /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/computerRoom.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
