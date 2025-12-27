@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/pixriq/桌面/Cpp_code/Computer room reservation system/build",
+  "command": "/usr/bin/g++  -I\"/home/pixriq/桌面/Cpp_code/Computer room reservation system/include\" -g -std=gnu++11 -o CMakeFiles/app.dir/src/main.cpp.o -c \"/home/pixriq/桌面/Cpp_code/Computer room reservation system/src/main.cpp\"",
+  "file": "/home/pixriq/桌面/Cpp_code/Computer room reservation system/src/main.cpp",
+  "output": "CMakeFiles/app.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/pixriq/桌面/Cpp_code/Computer room reservation system/build",
+  "command": "/usr/bin/g++  -I\"/home/pixriq/桌面/Cpp_code/Computer room reservation system/include\" -g -std=gnu++11 -o CMakeFiles/app.dir/src/student.cpp.o -c \"/home/pixriq/桌面/Cpp_code/Computer room reservation system/src/student.cpp\"",
+  "file": "/home/pixriq/桌面/Cpp_code/Computer room reservation system/src/student.cpp",
+  "output": "CMakeFiles/app.dir/src/student.cpp.o"
+},
+{
+  "directory": "/home/pixriq/桌面/Cpp_code/Computer room reservation system/build",
+  "command": "/usr/bin/g++  -I\"/home/pixriq/桌面/Cpp_code/Computer room reservation system/include\" -g -std=gnu++11 -o CMakeFiles/app.dir/src/teacher.cpp.o -c \"/home/pixriq/桌面/Cpp_code/Computer room reservation system/src/teacher.cpp\"",
+  "file": "/home/pixriq/桌面/Cpp_code/Computer room reservation system/src/teacher.cpp",
+  "output": "CMakeFiles/app.dir/src/teacher.cpp.o"
+}
+]
