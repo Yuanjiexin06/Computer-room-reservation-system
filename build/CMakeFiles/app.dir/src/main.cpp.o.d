@@ -152,11 +152,18 @@ CMakeFiles/app.dir/src/main.cpp.o: \
  /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/identity.h \
  /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
  /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/student.h \
- /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/teacher.h \
- /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/manager.h \
- /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/computerRoom.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/globaFile.h
+ /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/computerRoom.h \
+ /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/teacher.h \
+ /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/orderFile.h \
+ /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/globaFile.h \
+ /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
+ /usr/include/c++/13/ext/aligned_buffer.h \
+ /usr/include/c++/13/bits/stl_map.h /usr/include/c++/13/tuple \
+ /usr/include/c++/13/bits/uses_allocator.h \
+ /usr/include/c++/13/bits/stl_multimap.h \
+ /usr/include/c++/13/bits/erase_if.h \
+ /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/include/manager.h

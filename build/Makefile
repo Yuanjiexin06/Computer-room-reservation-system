@@ -184,6 +184,30 @@ src/manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/manager.cpp.s
 .PHONY : src/manager.cpp.s
 
+src/orderFile.o: src/orderFile.cpp.o
+.PHONY : src/orderFile.o
+
+# target to build an object file
+src/orderFile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/orderFile.cpp.o
+.PHONY : src/orderFile.cpp.o
+
+src/orderFile.i: src/orderFile.cpp.i
+.PHONY : src/orderFile.i
+
+# target to preprocess a source file
+src/orderFile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/orderFile.cpp.i
+.PHONY : src/orderFile.cpp.i
+
+src/orderFile.s: src/orderFile.cpp.s
+.PHONY : src/orderFile.s
+
+# target to generate assembly for a file
+src/orderFile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/orderFile.cpp.s
+.PHONY : src/orderFile.cpp.s
+
 src/student.o: src/student.cpp.o
 .PHONY : src/student.o
 
@@ -248,6 +272,9 @@ help:
 	@echo "... src/manager.o"
 	@echo "... src/manager.i"
 	@echo "... src/manager.s"
+	@echo "... src/orderFile.o"
+	@echo "... src/orderFile.i"
+	@echo "... src/orderFile.s"
 	@echo "... src/student.o"
 	@echo "... src/student.i"
 	@echo "... src/student.s"

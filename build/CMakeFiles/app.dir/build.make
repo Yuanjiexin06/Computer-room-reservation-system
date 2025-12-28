@@ -100,10 +100,24 @@ CMakeFiles/app.dir/src/manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/manager.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pixriq/桌面/Cpp_code/Computer room reservation system/src/manager.cpp" -o CMakeFiles/app.dir/src/manager.cpp.s
 
+CMakeFiles/app.dir/src/orderFile.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/orderFile.cpp.o: /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/src/orderFile.cpp
+CMakeFiles/app.dir/src/orderFile.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pixriq/桌面/Cpp_code/Computer room reservation system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/src/orderFile.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/orderFile.cpp.o -MF CMakeFiles/app.dir/src/orderFile.cpp.o.d -o CMakeFiles/app.dir/src/orderFile.cpp.o -c "/home/pixriq/桌面/Cpp_code/Computer room reservation system/src/orderFile.cpp"
+
+CMakeFiles/app.dir/src/orderFile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/orderFile.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pixriq/桌面/Cpp_code/Computer room reservation system/src/orderFile.cpp" > CMakeFiles/app.dir/src/orderFile.cpp.i
+
+CMakeFiles/app.dir/src/orderFile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/orderFile.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pixriq/桌面/Cpp_code/Computer room reservation system/src/orderFile.cpp" -o CMakeFiles/app.dir/src/orderFile.cpp.s
+
 CMakeFiles/app.dir/src/student.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/src/student.cpp.o: /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/src/student.cpp
 CMakeFiles/app.dir/src/student.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pixriq/桌面/Cpp_code/Computer room reservation system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/src/student.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pixriq/桌面/Cpp_code/Computer room reservation system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/src/student.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/student.cpp.o -MF CMakeFiles/app.dir/src/student.cpp.o.d -o CMakeFiles/app.dir/src/student.cpp.o -c "/home/pixriq/桌面/Cpp_code/Computer room reservation system/src/student.cpp"
 
 CMakeFiles/app.dir/src/student.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/app.dir/src/student.cpp.s: cmake_force
 CMakeFiles/app.dir/src/teacher.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/src/teacher.cpp.o: /home/pixriq/桌面/Cpp_code/Computer\ room\ reservation\ system/src/teacher.cpp
 CMakeFiles/app.dir/src/teacher.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pixriq/桌面/Cpp_code/Computer room reservation system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/src/teacher.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pixriq/桌面/Cpp_code/Computer room reservation system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/app.dir/src/teacher.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/teacher.cpp.o -MF CMakeFiles/app.dir/src/teacher.cpp.o.d -o CMakeFiles/app.dir/src/teacher.cpp.o -c "/home/pixriq/桌面/Cpp_code/Computer room reservation system/src/teacher.cpp"
 
 CMakeFiles/app.dir/src/teacher.cpp.i: cmake_force
@@ -132,6 +146,7 @@ CMakeFiles/app.dir/src/teacher.cpp.s: cmake_force
 app_OBJECTS = \
 "CMakeFiles/app.dir/src/main.cpp.o" \
 "CMakeFiles/app.dir/src/manager.cpp.o" \
+"CMakeFiles/app.dir/src/orderFile.cpp.o" \
 "CMakeFiles/app.dir/src/student.cpp.o" \
 "CMakeFiles/app.dir/src/teacher.cpp.o"
 
@@ -140,12 +155,13 @@ app_EXTERNAL_OBJECTS =
 
 app: CMakeFiles/app.dir/src/main.cpp.o
 app: CMakeFiles/app.dir/src/manager.cpp.o
+app: CMakeFiles/app.dir/src/orderFile.cpp.o
 app: CMakeFiles/app.dir/src/student.cpp.o
 app: CMakeFiles/app.dir/src/teacher.cpp.o
 app: CMakeFiles/app.dir/build.make
 app: CMakeFiles/app.dir/compiler_depend.ts
 app: CMakeFiles/app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/pixriq/桌面/Cpp_code/Computer room reservation system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/pixriq/桌面/Cpp_code/Computer room reservation system/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

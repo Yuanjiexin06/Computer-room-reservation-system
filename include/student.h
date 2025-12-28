@@ -2,6 +2,8 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+#include "computerRoom.h"
 #include "identity.h"
 
 class Student : public Identity {
@@ -18,4 +20,5 @@ public:
     void cancelOrder(); //取消预约
 
     int m_Id; //学号
+    std::vector<ComputerRoom> m_vCom;
 };

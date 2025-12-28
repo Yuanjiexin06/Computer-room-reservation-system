@@ -51,7 +51,60 @@ void managerMenu(Identity *&manager)
 void studentMenu(Identity *&student)
 {
     student->operMenu();
-    //TODO
+    Student *stu = (Student *)student;
+    while (true)
+    {
+        std::cout << "请输入您的选择：" << std::endl;
+        int choice;
+        std::cin >> choice;
+        switch (choice)
+        {
+        case 1:
+            stu->applyOrder();
+            break;
+        case 2:
+            stu->showMyOrder();
+            break;
+        case 3:
+            stu->showAllOrder();
+            break;
+        case 4:
+            stu->cancelOrder();
+            break;
+        case 0:
+            delete student;
+            return;
+        default:
+            std::cout << "输入有误，请重新输入！" << std::endl;
+            break;
+        }
+    }
+}
+void teacherMenu(Identity *&teacher)
+{
+    teacher->operMenu();
+    Teacher *tea = (Teacher *)teacher;
+    while (true)
+    {
+        std::cout << "请输入您的选择：" << std::endl;
+        int choice;
+        std::cin >> choice;
+        switch (choice)
+        {
+        case 1:
+            tea->showAllOrder();
+            break;
+        case 2:
+            tea->validOrder();
+            break;
+        case 0:
+            delete teacher;
+            return;
+        default:
+            std::cout << "输入有误，请重新输入！" << std::endl;
+            break;
+        }
+    }
 }
 void LoginIn(string Filename, int type){
     //type 1学生 2老师 3管理员
@@ -92,7 +145,7 @@ void LoginIn(string Filename, int type){
                 cin.get();
                 system("clear");
                 person = new Student(fId, fName, fPwd);
-
+                studentMenu(person);
                 return;
             }
         }
@@ -112,7 +165,7 @@ void LoginIn(string Filename, int type){
                 cin.get();
                 system("clear");
                 person = new Teacher(fId, fName, fPwd);
-
+                teacherMenu(person);
                 return;
             }
         }
@@ -156,7 +209,7 @@ int main(){
         cout << "|                         3.管理员                      |" << endl;
         cout << "|                         0.退出                        |" << endl;
         cout << "=========================================================" << endl;
-        cout << "请输入您的选择（0-3）：";
+        cout << "请输入您的选择";
         int choice;
         cin >> choice;
         switch (choice)
